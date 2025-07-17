@@ -67,7 +67,9 @@
         <div class="highlight publication row clearfix">
             <div class="row-media" style="background-image: url(files/isaac_mppi.gif);"></div>
             <div class="row-text">
-                <a class="publication-title bold" href="https://autonomousrobots.nl/paper_websites/isaac-mppi">Sampling-based Model Predictive Control Leveraging Parallelizable Physics Simulations</a><br/>
+                <a class="publication-title bold" href="https://autonomousrobots.nl/paper_websites/isaac-mppi">Sampling-based Model Predictive Control Leveraging Parallelizable Physics Simulations
+                <span id="stars-mppi-isaac" class="stars">⭐ …</span>
+                </a><br/>
                 Corrado Pezzato*, Chadi Salmi*, <span class="bold">Elia Trevisan*</span>, Max Spahn, Javier Alonso-Mora, Carlos Hernández Corbato<br/>
                 <span class="italic">IEEE Robotics and Automation Letters (<a href="https://www.ieee-ras.org/publications/ra-l">RAL</a></span>), 2025<br/>
                 <a class="btn btn-orange" href="https://autonomousrobots.nl/paper_websites/isaac-mppi">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2307.09105">arXiv</a> / <a class="btn" href="https://github.com/tud-amr/mppi-isaac">code</a> / <a class="btn btn-dark" href="bibtex/georgiev2024pwm.txt">bibtex</a>
@@ -76,7 +78,10 @@
         <div class="publication row clearfix">
             <div class="row-media" style="background-image: url(files/m3p2i.gif);"></div>
             <div class="row-text">
-                <a class="publication-title bold" href="https://autonomousrobots.nl/paper_websites/m3p2i-aip">Multi-Modal MPPI and Active Inference for Reactive Task and Motion Planning</a><br/>
+                <a class="publication-title bold" href="https://autonomousrobots.nl/paper_websites/m3p2i-aip">
+                Multi-Modal MPPI and Active Inference for Reactive Task and Motion Planning
+                <span id="stars-m3p2i" class="stars">⭐ …</span>
+                </a><br/>
                 Yuezhe Zhang, Corrado Pezzato, <span class="bold">Elia Trevisan*</span>, Chadi Salmi, Carlos Hernández Corbato, Javier Alonso-Mora<br/>
                 <span class="italic">IEEE Robotics and Automation Letters (<a href="https://www.ieee-ras.org/publications/ra-l">RAL</a></span>), 2024<br/>
                 <a class="btn btn-orange" href="https://autonomousrobots.nl/paper_websites/m3p2i-aip">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2312.02328">arXiv</a> / <a class="btn" href="https://github.com/tud-amr/m3p2i-aip">code</a> / <a class="btn btn-dark" href="bibtex/hansen2024hierarchical.txt">bibtex</a>
@@ -85,7 +90,9 @@
         <div class="highlight publication row clearfix">
             <div class="row-media" style="background-image: url(files/bias_mppi.gif);"></div>
             <div class="row-text">
-                <a class="publication-title bold" href="https://autonomousrobots.nl/paper_websites/biased-mppi">Biased-MPPI: Informing Sampling-Based Model Predictive Control by Fusing Ancillary Controllers</a><br/>
+                <a class="publication-title bold" href="https://autonomousrobots.nl/paper_websites/biased-mppi">Biased-MPPI: Informing Sampling-Based Model Predictive Control by Fusing Ancillary Controllers
+                <span id="stars-biased-mppi" class="stars">⭐ …</span>
+                </a><br/>
                 <span class="bold">Elia Trevisan</span>, Javier Alonso-Mora<br/>
                 <span class="italic">IEEE Robotics and Automation Letters (<a href="https://www.ieee-ras.org/publications/ra-l">RAL</a></span>), 2024<br/>
                 <a class="btn btn-orange" href="https://autonomousrobots.nl/paper_websites/biased-mppi">project page</a> / <a class="btn btn-red" href="https://arxiv.org/abs/2401.09241">arXiv</a> / <a class="btn" href="https://github.com/tud-amr/biased-mppi">code</a> / <a class="btn btn-dark" href="bibtex/remonda2024simulation.txt">bibtex</a>
@@ -189,5 +196,46 @@
         &copy; 2025 Elia Trevisan. No web trackers. Design is forked from <a style="color: white; text-decoration: underline;" href="https://github.com/nicklashansen/nicklashansen.github.io">here</a>.
     </div>
 </div>
+
+<script>
+  fetch("https://api.github.com/repos/tud-amr/mppi-isaac")
+    .then(res => res.json())
+    .then(data => {
+      const starSpan = document.getElementById("stars-mppi-isaac");
+      starSpan.textContent = `⭐ ${data.stargazers_count}`;
+    })
+    .catch(() => {
+      // Fallback if GitHub API fails
+      document.getElementById("stars-mppi-isaac").textContent = "⭐";
+    });
+</script>
+
+<script>
+  fetch("https://api.github.com/repos/tud-amr/m3p2i-aip")
+    .then(res => res.json())
+    .then(data => {
+      const starSpan = document.getElementById("stars-m3p2i");
+      starSpan.textContent = `⭐ ${data.stargazers_count}`;
+    })
+    .catch(() => {
+      // Fallback if GitHub API fails
+      document.getElementById("stars-m3p2i").textContent = "⭐";
+    });
+</script>
+
+<script>
+  fetch("https://api.github.com/repos/tud-amr/biased-mppi")
+    .then(res => res.json())
+    .then(data => {
+      const starSpan = document.getElementById("stars-biased-mppi");
+      starSpan.textContent = `⭐ ${data.stargazers_count}`;
+    })
+    .catch(() => {
+      // Fallback if GitHub API fails
+      document.getElementById("stars-biased-mppi").textContent = "⭐";
+    });
+</script>
+
+
 </body>
 </html>
