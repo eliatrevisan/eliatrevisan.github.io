@@ -1,0 +1,10 @@
+@phdthesis{trevisan2025thesis,
+  title = "Model Predictive Path Integral Control for Interaction-Rich Local Motion Planning in Dynamic Environments",
+  author = "E. Trevisan",
+  year = "2025",
+  doi = "10.4233/uuid:e7343dd8-cab4-4679-92a6-84a67430af54",
+  language = "English",
+  isbn = "978-94-6518-027-4",
+  type = "Dissertation (TU Delft)",
+  school = "Delft University of Technology",
+}

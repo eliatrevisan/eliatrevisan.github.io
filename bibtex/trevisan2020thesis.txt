@@ -1,0 +1,7 @@
+@mastersthesis{trevisan2020thesis,
+  title        = {Joint Estimation of Object and Aberration for High Numerical Aperture Microscopy},
+  author       = {Elia Trevisan},
+  year         = 2020,
+  school       = {Delft University of Technology},
+  type         = {Master's thesis}
+}

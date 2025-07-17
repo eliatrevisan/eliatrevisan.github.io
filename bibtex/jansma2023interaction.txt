@@ -1,0 +1,8 @@
+@inproceedings{jansma2023interaction,
+  title={Interaction-aware sampling-based MPC with learned local goal predictions},
+  author={Jansma, Walter and Trevisan, Elia and Serra-G{\'o}mez, Alvaro and Alonso-Mora, Javier},
+  booktitle={2023 International Symposium on Multi-Robot and Multi-Agent Systems (MRS)},
+  pages={15--21},
+  year={2023},
+  organization={IEEE}
+}

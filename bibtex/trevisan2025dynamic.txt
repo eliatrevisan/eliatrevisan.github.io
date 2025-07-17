@@ -1,0 +1,7 @@
+@inproceedings{trevisan2025dynamic,
+  title={Dynamic Risk-Aware MPPI for Mobile Robots in Crowds via Efficient Monte Carlo Approximations},
+  author={Trevisan, Elia and Mustafa, Khaled A and Notten, Godert and Wang, Xinwei and Alonso-Mora, Javier},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2025},
+  organization={IEEE}
+}

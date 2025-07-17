@@ -1,0 +1,7 @@
+@article{pezzato2025sampling,
+  title={Sampling-based model predictive control leveraging parallelizable physics simulations},
+  author={Pezzato, Corrado and Salmi, Chadi and Trevisan, Elia and Spahn, Max and Alonso-Mora, Javier and Corbato, Carlos Hern{\'a}ndez},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  publisher={IEEE}
+}

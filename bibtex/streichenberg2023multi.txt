@@ -1,0 +1,8 @@
+@inproceedings{streichenberg2023multi,
+  title={Multi-Agent Path Integral Control for Interaction-Aware Motion Planning in Urban Canals},
+  author={Streichenberg, Lucas and Trevisan, Elia and Chung, Jen Jen and Siegwart, Roland and Alonso-Mora, Javier},
+  booktitle={2023 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={1379--1385},
+  year={2023},
+  organization={IEEE}
+}

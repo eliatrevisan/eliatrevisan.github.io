@@ -1,0 +1,5 @@
+@inproceedings{pezzato2023sampling,
+  title={Sampling-based mpc using a gpu-parallelizable physics simulator as dynamic model: an open source implementation with isaacgym},
+  author={Pezzato, Corrado and Salmi, Chadi and Trevisan, Elia and Mora, Javier Alonso and Corbato, Carlos Hern{\'a}ndez},
+  booktitle={Embracing Contacts-Workshop at ICRA 2023}
+}

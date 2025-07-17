@@ -1,0 +1,7 @@
+@inproceedings{vandersaag2025active,
+  title={Active Disturbance Rejection Control for Trajectory Tracking of a Seagoing USV: Design, Simulation, and Field Experiments},
+  author={van der Saag, Jelmer and Trevisan, Elia and Falkena, Wouter and Alonso-Mora, Javier},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2025},
+  organization={IEEE}
+}
