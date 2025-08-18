@@ -45,7 +45,14 @@ p {line-height: 1.5em;}
 
 @media only screen and (max-width: 1000px) {
     .publication {margin-bottom: 46px;}
-    .publication .row-media {width: 260px; height: 130px; margin: auto; margin-bottom: 12px; display: block;}
+    .publication .row-media {
+        width: 100%; 
+        max-width: 300px; 
+        height: 150px; 
+        margin: 0 auto 12px auto; 
+        display: block; 
+        float: none;
+    }
     .publication .row-text {display: block; width: 100%; margin-left: 0;}
     .press {display: block;}
 }
