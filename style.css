@@ -36,23 +36,83 @@ p {line-height: 1.5em;}
 .footer-content a:hover {color: #f09228 !important;}
 .stars {font-size: 10px; display: inline-block; margin-left: 6px; color: #666;}
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1000px) {
     .header-profile-picture, .header-text {display: block; margin: auto; text-align: center;}
     .header-profile-picture {margin-bottom: 12px; width: 140px; height: 140px;}
     body {font-size: 18px;}
     a.btn {font-size: 14px; padding: 2px 6px;}
+    
+    /* Fix centering for tablets and shorter publications */
+    .row-text {
+        max-width: 100%;
+    }
+    
+    .publication {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-    .publication {margin-bottom: 46px;}
+    /* Center section titles and subtitles */
+    h2 {text-align: center;}
+    .content > div > p {text-align: center; margin-bottom: 24px;}
+    
+    /* Improve publication layout */
+    .publication {
+        margin-bottom: 0px; 
+        padding: 16px; 
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
     .publication .row-media {
         width: 100%; 
         max-width: 300px; 
         height: 150px; 
-        margin: 0 auto 12px auto; 
+        margin: 0 auto 16px auto; 
         display: block; 
         float: none;
     }
-    .publication .row-text {display: block; width: 100%; margin-left: 0;}
+    .publication .row-text {
+        display: block; 
+        width: 100%; 
+        margin-left: 0; 
+        text-align: center;
+        line-height: 1.3em;
+    }
+    
+    /* Center publication title and improve spacing */
+    .publication-title {
+        display: block; 
+        margin-bottom: 8px;
+        line-height: 1.3em;
+    }
+    
+    /* Ensure proper line breaks only where we have <br/> tags */
+    .publication .row-text br {
+        display: block;
+        content: "";
+        margin-bottom: 6px;
+    }
+    
+    /* Keep all spans inline to avoid unwanted line breaks */
+    .publication .row-text span {
+        display: inline;
+    }
+    
+    /* Center button groups with reduced line spacing */
+    .publication .row-text > a.btn {
+        margin: 1px 4px; 
+        display: inline-block;
+        line-height: 1.2em;
+    }
+    
+    /* Adjust highlighted publications for mobile */
+    .publication.highlight {
+        padding: 20px 16px; 
+        margin: 0px 0;
+    }
+    
     .press {display: block;}
 }
