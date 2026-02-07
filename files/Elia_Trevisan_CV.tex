@@ -1,0 +1,287 @@
+    %-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Elia Trevisan, PhD} % Your Name
+\newcommand{\currentpos}{Robot Control @ Neura Robotics} % Your Program
+\newcommand{\edutitle}{MSc Systems \& Control} % Your Roll No.
+\newcommand{\phone}{+49 1741521968} % Your Phone Number
+\newcommand{\emaila}{elia.trv@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ \phone}\\
+  {\currentpos} & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+  {Stuttgart, Germany} & \href{https://eliatrevisan.com}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {eliatrevisan.com}} \\  
+\end{tabularx}
+}
+
+Motion planning and control engineer with expertise in gradient-free optimization methods (MPPI, CEM) now popular for model-based RL and world models. Background in system identification, control theory, autonomous driving, and manipulation. I love solving hard problems, from theory to hardware.
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer - Robot Control}{}
+      {Neura Robotics, Stuttgart, Germany}{November 2026 - Present}
+        \vspace{-1.5mm}
+      \resumeItemListStart
+    \item {Developing motion planning and control software for humanoids, collaborative industrial arms, mobile manipulators, and autonomous mobile robots.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {PhD and Postdoc - Robot Motion Planning}{}
+      {TU Delft, Netherlands}{October 2020 - June 2025}
+        \vspace{-1.5mm}
+        \resumeItemListStart
+            \item {Contributed to optimization and sampling-based Model Predictive Control (MPC) (e.g., MPPI), Risk-Awareness, Machine Learning (ML) for trajectory prediction, and collaborated on Task and Motion Planning (TAMP).}\vspace{0.5mm}
+            \item {Applied planners to \textbf{vessels} (Roboat) in outdoor environments, \textbf{ground robots} (Jackal), and \textbf{mobile manipulators} (Boxer with Panda arm) for pushing and grasping using \textbf{Isaac Gym} as a dynamic model.}\vspace{0.5mm}
+            \item {\textbf{Mentored ten students}, of which six master thesis, one internship, one master research assignment, and two bachelor projects. All students were very successful, and \textbf{all} theses were \textbf{included in a publication}.}\vspace{0.5mm}
+            \item {Published several papers in \textbf{top robotics workshops, conferences and journals} (ICRA, IROS, MRS, RAL), with \textbf{two} nominated \textbf{Best Paper Finalists}.}
+            \item {PhD \textbf{thesis} was a \textbf{finalist} for the \textbf{IEEE RAS TC-MRS Best Dissertation Award}.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant - Systems \& Control}{}
+      {TU Delft, Netherlands}{Sep 2019 - Jun 2020}
+        \vspace{-1.5mm}
+      \resumeItemListStart
+    \item {Mentored master students in core control courses (Introduction Project, Nonlinear Systems Theory, Integration Projects), trusted by faculty to guide students through complex assignments and projects.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Board Member - Systems \& Control Student Association}{}
+      {DSA Kalman, TU Delft}{Mar 2019 - Mar 2020}
+        \vspace{-1.5mm}
+      \resumeItemListStart
+    \item {Organized course evaluations, maintained association website, and coordinated social and industry events.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {PLC Programmer - Industrial Automation}{}
+      {Tecnoquadri, Italy}{Mar 2018 - Aug 2018}
+        \vspace{-1.5mm}
+      \resumeItemListStart
+    \item {Designed PLC software for production lines and coordinated installation across factories. Hands-on experience with industrial robots and automation, wiring electrical panels, and mechanical systems.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {MSc in Systems and Control}{\textit{\textbf{Cum Laude}}}
+        {TU Delft, Netherlands}{Sep 2018 - Aug 2020}
+        \vspace{-1.5mm}
+        \resumeItemListStart
+            \item {Courses on control theory, robust and multivariable control design, filtering \& identification, optimization in systems and control, nonlinear systems theory, model predictive control, adaptive control, fault diagnosis and fault tolerant control, digital control.}
+            \item {Graduated \textbf{top of my class}, thesis with Prof. Michel Verhaegen on modeling and identification for High Numerical-Aperture microscopy. Developed an algorithm that could both retrieve a clear image of the specimen and estimate the aberration in the microscope from very few out-of-focus images via alternating projections.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {BSc in Automation Engineering}{}
+        {University of Bologna, Italy and Tongji University, China}{Sep 2014 - Feb 2018}
+        \vspace{-1.5mm}
+        \resumeItemListStart
+            \item {\textbf{Won} AlmaTong, \textbf{a merit-based scholarship} to perform half of the bachelor's at Tongji University in Shanghai.}
+            \item {Courses on automatic controls, mechanics, electronics, computer architectures, automatic machines, and robotics.}
+            \item {Led a collaboration between my university and Electrolux and developed a simulator in Gazebo, using ROS, MoveIt, and Aruco markers to detect and manipulate household appliances with a UR5 Robot.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Electrical Engineering High School}{}
+        {ITST J.F. Kennedy, Italy}{Sep 2009 - Jul 2014}
+        \vspace{-1.5mm}
+        \resumeItemListStart
+            \item {Theory and laboratories on electric machines, control, and design of civilian and industrial power systems.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+
+
+\newpage
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Proficient in C/C++, Python (with PyTorch), Matlab, Simulink, Siemens TIA Portal, beginner in CUDA, HTML and CSS.} \\
+     \vspace{1.0mm}
+     \textbf{Robotics}{: Competent in ROS1 and ROS2, motion capture (Vicon and OptiTrack), experience with Lidar Odometry (KISS-ICP and LIO-SAM), Gazebo, Pybullet, IsaacGym, Docker, and several robotics platforms.}\\
+     \vspace{1.0mm}
+     \textbf{Development}{: Git, CI/CD pipelines, cloud storage (AWS S3), Linux.} \\
+     \vspace{1.0mm}
+     \textbf{Languages}{: Fluent in Italian and English, beginner in Spanish and Polish.}\\
+     \vspace{1.0mm}
+     \textbf{Personal Interests}{I build stuff also outside working hours, but it's usually made out of wood. I competed in athletics many years ago. I now still enjoy running, but I recently got into bouldering. I love to hike, and I miss my Alps! I always snorkel when I get the chance. I've recently scuba-dived on the reef in Okinawa and have wanted to get a license since then. I used to play the drums as a teenager, and I am still always up for some good live music.} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+
+% %-----------Positions of Responsibility-----------------
+% \section{\textbf{Positions of Responsibility}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{On Desk Registrations Volunteer } % Position
+%     {Aarhant Cyber Week Event - RCOEM, Nagpur} %Club,Event
+%     {Oct - Dec 2022} %Tenure Period \\
+%     \resumeItemListStart
+%     \item {Helped to attract close to 300 attendees to the event.}
+%     \item {Collected over Rs. 20,000 in entry fees for different activities.}
+%     \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+
+
+
+% %-----------Achievements-----------------
+% \section{\textbf{Achievements}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+    
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
