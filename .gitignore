@@ -39,3 +39,11 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+# Tex temporary files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz

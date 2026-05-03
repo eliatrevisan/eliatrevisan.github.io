@@ -55,6 +55,7 @@ p {line-height: 1.5em;}
 @media only screen and (max-width: 1000px) {
     /* Center section titles and subtitles */
     h2 {text-align: center;}
+    .content > div > p {text-align: justify; margin-bottom: 24px;}
     
     /* Improve publication layout */
     .publication {
